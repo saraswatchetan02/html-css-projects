@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chart {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+            background-image: conic-gradient(
+                orange 0% 30%,
+                pink 30% 50%,
+                black 50% 75%,
+                olive 75% 90%,
+                red 90% 100%
+            );
+        }
+
+        .label {
+            position: absolute;
+            color: white;
+            font-weight: bold;
+        }
+
+        .orange-label {
+            top: 70px;
+            left: 190px;
+        }
+
+        .pink-label {
+            top: 170px;
+            left: 200px;
+        }
+
+        .black-label {
+            top: 220px;
+            left: 130px;
+        }
+
+        .olive-label {
+            top: 170px;
+            left: 60px;
+        }
+
+        .red-label {
+            top: 80px;
+            left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chart">
+
+        <div class="label orange-label">12 Students</div>
+        <div class="label pink-label">14 Students</div>
+        <div class="label black-label">42 Students</div>
+        <div class="label olive-label">22 Students</div>
+        <div class="label red-label">4 Students</div>
+
+    </div>
+</body>
+
+</html>

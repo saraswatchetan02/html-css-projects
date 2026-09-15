@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:3px solid red;
+            background-color:rgb(42, 165, 50);
+            width:150px;
+            height:150px;
+            animation-name: Royal;
+            animation-duration: 4s;
+            animation-timing-function: ease; 
+            animation-delay:2s; 
+             animation-direction: alternate-reverse;
+            animation-iteration-count: 2;
+        }
+        @keyframes Royal{
+            0%{
+                transform: rotate(0deg);
+                background-color:rgb(42, 165, 50);
+            }
+            25%{
+                transform: rotate(90deg);
+                background-color:rgb(0, 0, 255);
+            }
+            50%{
+                transform: rotate(180deg);
+                background-color:green;
+            }
+            75%{
+                transform: rotate(270deg);
+                background-color:yellow;
+            }
+            100%{
+                transform: rotate(360deg);
+                background-color:brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

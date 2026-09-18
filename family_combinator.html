@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- There are four different combinators in CSS:
+      Descendant combinator (space)
+      Child combinator (>)
+      Next sibling combinator (+)
+      Subsequent-sibling combinator (~) -->
+      <style>
+        .descendant p{
+            color:aqua
+        }
+        .child > p{
+            color:blue
+        }
+        .next + p {
+            color:green
+        }
+      </style>
+</head>
+<body>
+    <h2>Descendant Combinator</h2>
+    <div class="descendant" >
+        <p>Hello World!</p>
+        <section>
+            <p>hello chetan</p>
+        </section>
+    </div>
+    
+    <h2>Child Combinator</h2>
+    <div class="child">
+        <p>Hello World!</p>
+        <section>
+            <p>hello chetan</p>
+        </section>
+    </div>
+
+    <h2>Next Sibling Combinator</h2>
+
+    <div class="next">
+        <p>Hello World!</p>
+        <p>Another paragraph</p>
+    </div>
+        <p>hello chetan</p>
+        <p>hello baby</p>
+</body>
+</html>
